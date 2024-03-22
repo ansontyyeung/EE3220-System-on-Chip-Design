@@ -1,0 +1,18 @@
+Import of MDK uVision project 'Blinky' for the target 'STM32F401 Flash'
+
+Source
+  Example                     : Blinky (NUCLEO-F401RE)
+  Location                    : C:\Users\AIS\AppData\Local\Arm\Packs\Keil\STM32NUCLEO_BSP\1.7.0\Boards\ST\NUCLEO-F401RE\Blinky\Blinky.uvprojx
+  Target Name                 : STM32F401 Flash
+  ARMCC version               : Arm Compiler 5
+
+Destination
+  DS Workspace                : C:\Users\AIS\Development Studio Workspace
+  Project Name                : Blinky (NUCLEO-F401RE)_STM32F401_Flash
+  Location                    : C:\Users\AIS\Development Studio Workspace\Blinky (NUCLEO-F401RE)_STM32F401_Flash
+  Toolchain                   : Arm Compiler 5
+
+A COPY of the project files has been made with no changes to any files in the 'Source Location'.
+The import only covers aspects of the project build and not debug configuration settings.
+
+--- End of ImportReport.txt ---

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <packages/>
+  <device Dclock="84000000" Dcore="Cortex-M4" DcoreVersion="r0p1" Dendian="Little-endian" Dfpu="SP_FPU" Dmpu="MPU" Dname="STM32F401RETx" Dvendor="STMicroelectronics:13">
+    <package info="STMicroelectronics STM32F4 Series Device Support, Drivers and Examples" name="STM32F4xx_DFP" url="http://www.keil.com/pack/" vendor="Keil" version="2.15.0"/>
+  </device>
+  <toolchain Tcompiler="ARMCC" Toptions="AC5" Toutput="exe"/>
+  <components>
+    <component Capiversion="1.0.0" Cbundle="NUCLEO-F401RE" Cbundleversion="1.7.0" Cclass="Board Support" Cgroup="Buttons" Cvendor="Keil" Cversion="1.1.0" deviceDependent="1">
+      <package name="STM32NUCLEO_BSP" url="http://www.keil.com/pack/" vendor="Keil" version="1.7.0"/>
+      <file category="sourceC" deviceDependent="1" name="Boards/ST/NUCLEO-F401RE/Common/Buttons_NUCLEO_F401RE.c"/>
+    </component>
+    <component Capiversion="1.0.0" Cbundle="NUCLEO-F401RE" Cbundleversion="1.7.0" Cclass="Board Support" Cgroup="LED" Cvendor="Keil" Cversion="1.1.0" deviceDependent="1">
+      <package name="STM32NUCLEO_BSP" url="http://www.keil.com/pack/" vendor="Keil" version="1.7.0"/>
+      <file category="sourceC" deviceDependent="1" name="Boards/ST/NUCLEO-F401RE/Common/LED_NUCLEO_F401RE.c"/>
+    </component>
+    <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.4.0">
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.7.0"/>
+      <file category="doc" name="CMSIS/Documentation/Core/html/index.html"/>
+      <file category="include" name="CMSIS/Core/Include/"/>
+      <file category="header" condition="TrustZone" name="CMSIS/Core/Include/tz_context.h"/>
+      <file attr="template" category="sourceC" condition="TZ Secure" name="CMSIS/Core/Template/ARMv8-M/main_s.c" select="Secure mode 'main' module for ARMv8-M" version="1.1.1"/>
+      <file attr="template" category="sourceC" condition="TZ Secure" name="CMSIS/Core/Template/ARMv8-M/tz_context.c" select="RTOS Context Management (TrustZone for ARMv8-M)" version="1.1.1"/>
+    </component>
+    <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.3" deviceDependent="1">
+      <package name="STM32F4xx_DFP" url="http://www.keil.com/pack/" vendor="Keil" version="2.15.0"/>
+      <file category="include" deviceDependent="1" name="Drivers/CMSIS/Device/ST/STM32F4xx/Include/"/>
+      <file attr="template" category="source" condition="STM32F401_ARMCC" deviceDependent="1" name="MDK/Device/Source/ARM/STM32F401xx_OPT.s" select="Flash Option Bytes"/>
+      <file attr="template" category="source" condition="STM32F4_ARMCC" deviceDependent="1" name="MDK/Device/Source/ARM/STM32F4xx_OTP.s" select="Flash One-Time programmable Bytes"/>
+      <file category="header" deviceDependent="1" name="Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"/>
+      <file attr="config" category="source" condition="STM32F401xE_ARMCC" deviceDependent="1" name="Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xe.s" version="2.6.2"/>
+      <file attr="config" category="source" deviceDependent="1" name="Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c" version="2.6.2"/>
+    </component>
+  </components>
+  <apis>
+    <api Capiversion="1.0.0" Cclass="Board Support" Cgroup="Buttons" Cvendor="Keil" Cversion="1.0.0" exclusive="0">
+      <package name="MDK-Middleware" url="http://www.keil.com/pack/" vendor="Keil" version="7.12.0"/>
+      <file category="header" name="Board/Board_Buttons.h"/>
+      <file category="doc" name="Doc/Board/html/group__bsp__buttons.html"/>
+    </api>
+    <api Capiversion="1.0.0" Cclass="Board Support" Cgroup="LED" Cvendor="Keil" Cversion="1.0.0" exclusive="0">
+      <package name="MDK-Middleware" url="http://www.keil.com/pack/" vendor="Keil" version="7.12.0"/>
+      <file category="header" name="Board/Board_LED.h"/>
+      <file category="doc" name="Doc/Board/html/group__bsp__led.html"/>
+    </api>
+  </apis>
+</configuration>

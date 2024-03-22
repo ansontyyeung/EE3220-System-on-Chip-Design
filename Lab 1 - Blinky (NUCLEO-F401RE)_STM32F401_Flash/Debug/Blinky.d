@@ -1,0 +1,12 @@
+Blinky.o: ../Blinky.c
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.12.0/Board/Board_LED.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.12.0/Board/Board_Buttons.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include/core_cm4.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include/cmsis_version.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include/cmsis_compiler.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include/cmsis_armcc.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include/mpu_armv7.h
+Blinky.o: C:/Users/AIS/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+Blinky.o: ../Serial.h

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Blinky (NUCLEO-F401RE)_STM32F401_Flash</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.arm.debug.ds.nature</nature>
+		<nature>com.arm.cmsis.pack.project.RteNature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>RTE/Board_Support/Buttons_NUCLEO_F401RE.c</name>
+			<type>1</type>
+			<locationURI>$%7Bcmsis_pack_root%7D/Keil/STM32NUCLEO_BSP/1.7.0/Boards/ST/NUCLEO-F401RE/Common/Buttons_NUCLEO_F401RE.c</locationURI>
+		</link>
+		<link>
+			<name>RTE/Board_Support/LED_NUCLEO_F401RE.c</name>
+			<type>1</type>
+			<locationURI>$%7Bcmsis_pack_root%7D/Keil/STM32NUCLEO_BSP/1.7.0/Boards/ST/NUCLEO-F401RE/Common/LED_NUCLEO_F401RE.c</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
